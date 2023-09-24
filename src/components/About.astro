@@ -1,0 +1,212 @@
+---
+
+---
+
+<section class="about container section">
+
+    <div class="about__content">
+
+        <h2 class="about__title">About</h2>
+        <p class="about__description"></p>
+        <p class="about__description"></p>
+        <p class="about__description"></p>
+        <hr class="about__hr">
+        <h3 class="about__subtitle">Technologies</h3>
+        
+        <div class="about__techs-container">
+            <ul class="about__techs">
+                <li class="about__list">JavaScript (ES6+)</li>
+                <li class="about__list">TypeScript</li>
+                <li class="about__list">ReactJS</li>
+                <li class="about__list">Astro</li>
+            </ul>
+            <ul class="about__techs">
+                <li class="about__list">CSS</li>
+                <li class="about__list">HTML</li>
+                <li class="about__list">TailwindCSS</li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="img-wrapper">
+        <img class="about__img" src="" alt="photo of me"/>
+    </div>
+</section>
+
+<style>
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .about__content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about__title{
+        font-size: var(--size-2xl);
+        color: var(--color-light);
+    }
+
+    .about__description{
+        max-width: 60ch;
+        font-size: var(--size-sm);
+        color: var(--color-slate600);
+
+    }
+
+    .about__hr{
+        border-color: var(--color-slate800);
+    }
+
+    .about__subtitle{
+        font-size: var(--size-sm);
+        color: var(--color-slate400);
+    }
+
+    .about__techs-container{
+        display: flex;
+
+    }
+
+    .about__techs{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        list-style-type: '\1F44D';
+        padding-left: 1em;
+        flex: 1;
+    }
+
+    .about__list{
+        font-size: var(--size-sm);
+        color: var(--color-slate600);
+    }
+
+    .about__list::before{
+        content: '';
+        margin-left: 0.5em;
+    }
+
+
+    @media (min-width: 475px){
+        .about{
+
+            gap: 1.5rem;
+        }
+        .about__content{
+
+            gap: 1.5rem;
+        }
+
+        .about__title{
+            font-size: var(--size-3xl);
+        }
+
+        .about__description{
+            font-size: var(--size-base);
+
+        }
+
+        .about__subtitle{
+            font-size: var(--size-base);
+        }
+
+
+        .about__list{
+            font-size: var(--size-base);
+        }
+
+
+    }
+
+
+    @media (min-width: 640px){
+
+        .img-wrapper{
+            margin: 0 auto;
+        }
+        .about__img{
+            width: 28.678rem;
+        }
+    }
+
+
+    @media (min-width: 768px){
+
+    }
+
+
+
+    @media (min-width: 1024px){
+
+
+        .about{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about__title{
+            font-size: var(--size-4xl);
+        }
+
+        .about__description{
+            font-size: var(--size-lg);
+
+        }
+
+        .about__subtitle{
+            font-size: var(--size-lg);
+        }
+
+
+        .about__list{
+            font-size: var(--size-lg);
+        }
+
+
+    }
+
+
+    @media (min-width: 1280px){
+        .about__content{
+
+            gap: 2rem;
+        }
+        .about{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about__title{
+            font-size: var(--size-5xlxl);
+        }
+
+        .about__description{
+            font-size: var(--size-xl);
+
+        }
+
+        .about__subtitle{
+            font-size: var(--size-xl);
+        }
+
+
+        .about__list{
+            font-size: var(--size-xl);
+        }
+
+        .about__img{
+            width: 30rem;
+        }
+    }
+
+
+    @media (min-width: 1536px){
+
+    }
+</style>
